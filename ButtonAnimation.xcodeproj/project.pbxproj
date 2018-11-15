@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1718C030219D63580098A9B5 /* TitelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1718C02F219D63580098A9B5 /* TitelModel.m */; };
 		17864E8B219D265300FA5DE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 17864E8A219D265300FA5DE6 /* AppDelegate.m */; };
 		17864E8E219D265300FA5DE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17864E8D219D265300FA5DE6 /* ViewController.m */; };
 		17864E91219D265300FA5DE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17864E8F219D265300FA5DE6 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 		17864E99219D265700FA5DE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 17864E98219D265700FA5DE6 /* main.m */; };
 		17864EA3219D265700FA5DE6 /* ButtonAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17864EA2219D265700FA5DE6 /* ButtonAnimationTests.m */; };
 		17864EAE219D265700FA5DE6 /* ButtonAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17864EAD219D265700FA5DE6 /* ButtonAnimationUITests.m */; };
+		17864EBE219D277E00FA5DE6 /* WJRippleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17864EBD219D277E00FA5DE6 /* WJRippleButton.swift */; };
+		17864EC1219D48B500FA5DE6 /* ButtonRippleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 17864EC0219D48B500FA5DE6 /* ButtonRippleViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1718C02E219D63580098A9B5 /* TitelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TitelModel.h; sourceTree = "<group>"; };
+		1718C02F219D63580098A9B5 /* TitelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TitelModel.m; sourceTree = "<group>"; };
 		17864E86219D265300FA5DE6 /* ButtonAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17864E89219D265300FA5DE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		17864E8A219D265300FA5DE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,10 @@
 		17864EA9219D265700FA5DE6 /* ButtonAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ButtonAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17864EAD219D265700FA5DE6 /* ButtonAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonAnimationUITests.m; sourceTree = "<group>"; };
 		17864EAF219D265700FA5DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17864EBC219D277D00FA5DE6 /* ButtonAnimation-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ButtonAnimation-Bridging-Header.h"; sourceTree = "<group>"; };
+		17864EBD219D277E00FA5DE6 /* WJRippleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WJRippleButton.swift; sourceTree = "<group>"; };
+		17864EBF219D48B500FA5DE6 /* ButtonRippleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonRippleViewController.h; sourceTree = "<group>"; };
+		17864EC0219D48B500FA5DE6 /* ButtonRippleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonRippleViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1718C02D219D63140098A9B5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1718C02E219D63580098A9B5 /* TitelModel.h */,
+				1718C02F219D63580098A9B5 /* TitelModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		17864E7D219D265200FA5DE6 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +123,8 @@
 				17864E8A219D265300FA5DE6 /* AppDelegate.m */,
 				17864E8C219D265300FA5DE6 /* ViewController.h */,
 				17864E8D219D265300FA5DE6 /* ViewController.m */,
+				1718C02D219D63140098A9B5 /* Models */,
+				17864EBB219D272000FA5DE6 /* ButtonCorrugated */,
 				17864E8F219D265300FA5DE6 /* Main.storyboard */,
 				17864E92219D265700FA5DE6 /* Assets.xcassets */,
 				17864E94219D265700FA5DE6 /* LaunchScreen.storyboard */,
@@ -130,6 +150,17 @@
 				17864EAF219D265700FA5DE6 /* Info.plist */,
 			);
 			path = ButtonAnimationUITests;
+			sourceTree = "<group>";
+		};
+		17864EBB219D272000FA5DE6 /* ButtonCorrugated */ = {
+			isa = PBXGroup;
+			children = (
+				17864EBD219D277E00FA5DE6 /* WJRippleButton.swift */,
+				17864EBF219D48B500FA5DE6 /* ButtonRippleViewController.h */,
+				17864EC0219D48B500FA5DE6 /* ButtonRippleViewController.m */,
+				17864EBC219D277D00FA5DE6 /* ButtonAnimation-Bridging-Header.h */,
+			);
+			path = ButtonCorrugated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +230,7 @@
 				TargetAttributes = {
 					17864E85219D265300FA5DE6 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					17864E9D219D265700FA5DE6 = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -262,7 +294,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17864EBE219D277E00FA5DE6 /* WJRippleButton.swift in Sources */,
 				17864E8E219D265300FA5DE6 /* ViewController.m in Sources */,
+				1718C030219D63580098A9B5 /* TitelModel.m in Sources */,
+				17864EC1219D48B500FA5DE6 /* ButtonRippleViewController.m in Sources */,
 				17864E99219D265700FA5DE6 /* main.m in Sources */,
 				17864E8B219D265300FA5DE6 /* AppDelegate.m in Sources */,
 			);
@@ -433,8 +468,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GKVLMS86Y6;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ButtonAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -442,7 +480,11 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.asiacomm.com.cn.ButtonAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ButtonAnimation/ButtonCorrugated/ButtonAnimation-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
@@ -450,8 +492,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = GKVLMS86Y6;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = ButtonAnimation/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,13 +504,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.asiacomm.com.cn.ButtonAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ButtonAnimation/ButtonCorrugated/ButtonAnimation-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
 		17864EB6219D265700FA5DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GKVLMS86Y6;
@@ -485,6 +534,7 @@
 		17864EB7219D265700FA5DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GKVLMS86Y6;
@@ -504,6 +554,7 @@
 		17864EB9219D265700FA5DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GKVLMS86Y6;
 				INFOPLIST_FILE = ButtonAnimationUITests/Info.plist;
@@ -522,6 +573,7 @@
 		17864EBA219D265700FA5DE6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GKVLMS86Y6;
 				INFOPLIST_FILE = ButtonAnimationUITests/Info.plist;
